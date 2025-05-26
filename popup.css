@@ -1,0 +1,123 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+}
+
+.container {
+  padding: 16px;
+  position: relative;
+}
+
+h1 {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.converter {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+.input-with-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.converter-input {
+  flex: 1;
+  padding: 8px 12px;
+  padding-right: 36px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: calc(100% - 48px);
+}
+
+.converter-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 0 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-btn:hover {
+  color: #3498db;
+}
+
+label {
+  width: 30%;
+  padding-left: 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+button#clear {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button#clear:hover {
+  background-color: #2980b9;
+}
+
+.copy-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.copy-notification.show {
+  opacity: 1;
+}

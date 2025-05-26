@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EzWei - ETH Wei Converter</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ETH Wei Converter</h1>
+
+      <div class="converter">
+        <div class="input-group">
+          <div class="input-with-button">
+            <input
+              type="text"
+              id="wei"
+              placeholder="0"
+              class="converter-input"
+            />
+            <button
+              class="copy-btn"
+              data-target="wei"
+              title="Copy to clipboard"
+            >
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <label for="wei">Wei</label>
+        </div>
+
+        <div class="input-group">
+          <div class="input-with-button">
+            <input
+              type="text"
+              id="gwei"
+              placeholder="0"
+              class="converter-input"
+            />
+            <button
+              class="copy-btn"
+              data-target="gwei"
+              title="Copy to clipboard"
+            >
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <label for="gwei">Gwei</label>
+        </div>
+
+        <div class="input-group">
+          <div class="input-with-button">
+            <input
+              type="text"
+              id="ether"
+              placeholder="0"
+              class="converter-input"
+            />
+            <button
+              class="copy-btn"
+              data-target="ether"
+              title="Copy to clipboard"
+            >
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <label for="ether">Ether</label>
+        </div>
+      </div>
+
+      <div class="footer">
+        <button id="clear">Clear All</button>
+      </div>
+
+      <div id="copy-notification" class="copy-notification">
+        Copied to clipboard!
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
