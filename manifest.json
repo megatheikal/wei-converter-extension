@@ -19,7 +19,7 @@
   "permissions": ["clipboardWrite"],
   "browser_specific_settings": {
     "gecko": {
-      "id": "c990c2c5da9044c78e1678ffbe4ec54d",
+      "id": "{f5881f21-0da4-49e5-a732-da702d76d667}",
       "strict_min_version": "58.0"
     }
   }
