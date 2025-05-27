@@ -16,5 +16,11 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "permissions": ["clipboardWrite"]
+  "permissions": ["clipboardWrite"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "c990c2c5da9044c78e1678ffbe4ec54d",
+      "strict_min_version": "58.0"
+    }
+  }
 }
